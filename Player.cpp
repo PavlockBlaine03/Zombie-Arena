@@ -17,6 +17,13 @@ Player::Player()
 	m_Sprite.setOrigin(25, 25);
 }
 
+void Player::resetPlayerStats()
+{
+	m_Speed = START_SPEED;
+	m_Health = START_HEALTH;
+	m_MaxHealth = START_HEALTH;
+}
+
 void Player::spawn(IntRect arena, Vector2f resolution, int tileSize)
 {
 	// Place the player in the middle of the arena
