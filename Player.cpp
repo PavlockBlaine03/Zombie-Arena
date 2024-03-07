@@ -209,3 +209,14 @@ void Player::increaseHealthLevel(int amount)
 		m_Health = m_MaxHealth;
 	}
 }
+void Player::sprint(bool running)
+{
+	if (running)
+	{
+		m_Speed = START_SPEED * 2;
+	}
+	else
+	{
+		m_Speed = START_SPEED;
+	}
+}

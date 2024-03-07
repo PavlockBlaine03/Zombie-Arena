@@ -364,6 +364,14 @@ int main()
 			{
 				player.stopRight();
 			}
+			if (Keyboard::isKeyPressed(Keyboard::LShift))
+			{
+				player.sprint(true);
+			}
+			else
+			{
+				player.sprint(false);
+			}
 
 			// Fire a bullet
 			if (sf::Mouse::isButtonPressed(sf::Mouse::Left))

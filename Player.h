@@ -59,6 +59,9 @@ public:
 	// Handle the player getting hit by a zombie
 	bool hit(Time timeHit);
 
+	// Sprint the player
+	void sprint(bool);
+
 	// How long ago was the player last hit
 	Time getLastHitTime();
 
